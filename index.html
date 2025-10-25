@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brave's Portfolio</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Font Awesome for Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-dym1LkB5A3z5ZAA9bR4tYQ6Sz+5ZfHZG0Qzjq3+L1R6IO4FZ3Bz6DJ+7QlQd+G2+MB5sHyoaFTnSrLcmYl5HTw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation menu">
+    <div class="container">
+      <a href="#hero" class="logo">
+        <span class="highlight">Nziza</span> Brave
+        <span class="sr-only">Portfolio Homepage</span>
+      </a>
+
+      <div class="nav-links" id="navLinks" role="menubar">
+        <a href="#about" role="menuitem">About</a>
+        <a href="#skills" role="menuitem">Skills</a>
+        <a href="#projects" role="menuitem">Projects</a>
+        <a href="#contact" role="menuitem">Contact</a>
+
+        <button id="theme-toggle" aria-label="Toggle dark/light theme" role="switch" aria-checked="false" type="button">
+          <span class="icon-swap">
+            <i class="fas fa-sun" aria-hidden="true"></i>
+            <i class="fas fa-moon" aria-hidden="true" style="display: none;"></i>
+          </span>
+        </button>
+      </div>
+
+      <button class="burger-menu" id="burgerMenu" aria-label="Toggle navigation menu" aria-controls="navLinks" aria-expanded="false" type="button">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 id="hero-heading">FullStack Engineer</h1>
+            <p class="lead">
+  I’m a tech innovator passionate about cybersecurity, ethical hacking, and app development, 
+  blending creativity with logic to build <span class="highlight" id="dynamic-text">powerful, intelligent</span> software solutions.
+</p>
+
+            
+            <a href="#projects" class="btn btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
+            <a href="/assets/frontend-resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+              Download Resume <i class="fas fa-download"></i>
+            </a>
+          </div>
+          <div class="hero-image">
+            <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-short-hair-man-with-vr-9606389-7766934.png?f=webp"
+              alt="Professional portrait of a woman smiling" width="300" height="300" class="profile-pic" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- About Section -->
+    <section id="about" class="about-section" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading">About Me</h2>
+        <div class="about-content">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80"
+            alt="Developer team collaborating" width="500" height="350" class="about-img" />
+          <div>
+            <h3>My Philosophy</h3>
+            <p>I’m a <strong>results-driven Frontend Engineer</strong> focused on bridging design with robust, scalable code.</p>
+            <p>Specialized in <strong>React, Vue, and Angular</strong>, I write clean, accessible, and efficient front-end applications.</p>
+            <p>Thriving in <strong>agile environments</strong>, I collaborate with designers and developers to deliver seamless user experiences.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 id="skills-heading">My Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Languages</h3>
+            <ul>
+              <li><i class="fab fa-html5"></i> HTML5</li>
+              <li><i class="fab fa-css3-alt"></i> CSS3 / <span class="highlight">Flexbox / Grid</span></li>
+              <li><i class="fab fa-js-square"></i> JavaScript (ES6+) / <span class="highlight">TypeScript</span></li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Frameworks & Libraries</h3>
+            <ul>
+              <li><i class="fab fa-react"></i> React / Redux / Zustand</li>
+              <li><i class="fab fa-angular"></i> Angular</li>
+              <li><i class="fab fa-vuejs"></i> Vue.js / Nuxt.js</li>
+              <li><i class="fab fa-bootstrap"></i> Bootstrap / Tailwind CSS</li>
+              <li><i class="fab fa-sass"></i> SASS / SCSS / PostCSS</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Tools & Workflow</h3>
+            <ul>
+              <li><i class="fab fa-git-alt"></i> Git / GitHub / GitLab / Jira</li>
+              <li><i class="fas fa-terminal"></i> Node.js / npm / Yarn</li>
+              <li><i class="fas fa-cubes"></i> Webpack / Vite</li>
+              <li><i class="fas fa-universal-access"></i> Accessibility / Lighthouse</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A responsive portfolio built with HTML, CSS, and JavaScript showcasing projects and skills.</p>
+            <a href="#" class="btn btn-sm">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Task Tracker App</h3>
+            <p>Built using React + Redux, this app allows users to manage daily tasks with light/dark mode support.</p>
+            <a href="#" class="btn btn-sm">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Get in Touch</h2>
+        <p>If you'd like to work together or have any questions, feel free to reach out!</p>
+        <div class="contact-links">
+          <a href="bravenziza1@gmail.com" class="btn btn-primary">
+            <i class="fas fa-envelope"></i> Email Me
+          </a>
+                    <a href="https://www.linkedin.com/in/brave-nziza-310569378" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/Bravernz" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Marjory Dev. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Optional JS for menu toggle and theme toggle -->
+  <script>
+    // Toggle navigation links for mobile menu
+    const burgerMenu = document.getElementById('burgerMenu');
+    const navLinks = document.getElementById('navLinks');
+    burgerMenu.addEventListener('click', () => {
+      const expanded = burgerMenu.getAttribute('aria-expanded') === 'true' || false;
+      burgerMenu.setAttribute('aria-expanded', !expanded);
+      navLinks.classList.toggle('active');
+    });
+
+    // Toggle dark/light theme
+    const themeToggle = document.getElementById('theme-toggle');
+    const sunIcon = themeToggle.querySelector('.fa-sun');
+    const moonIcon = themeToggle.querySelector('.fa-moon');
+
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+      const isDark = document.body.classList.contains('dark-theme');
+      themeToggle.setAttribute('aria-checked', isDark);
+      sunIcon.style.display = isDark ? 'none' : 'inline';
+      moonIcon.style.display = isDark ? 'inline' : 'none';
+    });
+  </script>
+
+</body>
+</html>
+
